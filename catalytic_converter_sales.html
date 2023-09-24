@@ -63,7 +63,19 @@
         section ol li {
             margin-bottom: 5px;
         }
+        section img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd; /* Outline */
+            border-radius: 10px; /* Rounded corners */
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+        }
 
+        section .image-title {
+            text-align: center;
+        }
         footer {
             text-align: center;
             padding: 10px 0;
@@ -106,10 +118,10 @@
             <li>Use clear and well-lit images for accurate assessment.</li>
             <li>Use the following file names for your photos:</li>
             <ul>
-                <li>Good Photo: </li>  
-                <li><img src="good.jpg"></li>
-                <li>Bad Photo: </li> 
-                <li>3<img src="bad.jpg"></li>
+                <li class="image-title">Good Photo</li>
+                <li><img src="good.jpg" alt="Good Photo"></li>
+                <li class="image-title">Bad Photo</li>
+                <li><img src="bad.jpg" alt="Bad Photo"></li>
             </ul>
         </ul>
         <p>These guidelines will help us assess your catalytic converter accurately. Thank you!</p>
